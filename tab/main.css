@@ -1,0 +1,38 @@
+:root{
+    --dark: rgb(255, 200, 0);
+}
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+.tab{
+    width: 700px;
+    margin: 100px auto;
+}
+.tab-head{
+    display: flex;
+    align-items: center;
+    background: #393939;
+}
+.tab-head .head{
+    width: 25%;
+    padding: 10px;
+    background: #ccc;
+    cursor: pointer;
+    border: 1px solid black;
+}
+.tab-head .active{
+    background: var(--dark);
+}
+.tab-item .item{
+    padding: 10px;
+    background: #9b9b9b;
+    display: none;
+    border: 1px solid black;
+}
+.tab-item .active{
+    display: block;
+    background: var(--dark);
+}

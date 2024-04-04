@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body {
+    background: #5e5e5e;
+}
+.box {
+    width: 100%;
+}
+.top {
+    padding: 30px 80px;
+    background: #414141;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.top .left {
+    display: flex;
+    align-items: center;
+}
+.top .left .circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #f56666;
+}
+.top .left .rect {
+    width: 100px;
+    height: 20px;
+    background: rgb(95, 93, 93);
+    border-radius: 2px;
+    margin-left: 15px;
+}
+.top .btns button {
+    padding: 10px 20px;
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    margin-left: 15px;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.top .btns button:nth-child(2) {
+    background: #2f889a;
+    border: 1px solid #2f889a;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+.overlay.active {
+    display: block;
+}
+.overlay .form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    background: #fff;
+    border-radius: 5px;
+}
+.overlay .close {
+    position: absolute;
+    top: 50px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #f56666;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    cursor: pointer;
+    transition: .3s;
+}
+.overlay .close:hover {
+    background: #ff1313;
+}
+.overlay .form .form-top {
+    display: flex;
+}
+.overlay .form .form-top .head {
+    width: 50%;
+    padding: 30px;
+    text-align: center;
+    font-size: 18px;
+    background: #d8d8d8;
+    color: #646464;
+    cursor: pointer;
+}
+.overlay .form .form-top .active {
+    background: #fff;
+    color: #000;
+}
+.overlay .form form {
+    padding: 30px;
+    display: none;
+}
+.overlay .form .active {
+    display: block;
+}
+.overlay .form form input {
+    width: 100%;
+    padding: 20px 30px;
+    margin-bottom: 30px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-weight: 500px;
+    font-size: 18px;
+}
+.overlay .form form .checkbox {
+    display: flex;
+}
+.overlay .form form .checkbox input {
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+}
+.overlay .form form .checkbox span {
+    color: #2f889a;
+}
+.overlay .form form button {
+    width: 100%;
+    padding: 20px 30px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-weight: 500px;
+    font-size: 18px;
+    background: #2f889a;
+    border: 1px solid #2f889a;
+    color: #fff;
+    cursor: pointer;
+}
+.overlay .link {
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.overlay .link a {
+    color: #fff;
+}

@@ -1,0 +1,36 @@
+.root {
+    --main: #1cbb00;
+}
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.container {
+    width: 500px;
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.container ul {
+    width: 100%;
+}
+.container ul li {
+    margin: 20px 0;
+    padding: 20px;
+    background: #1cbb00;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+.container button{
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #fff;
+    background: rgb(1, 65, 155);
+    border: none;
+    cursor: pointer;
+}

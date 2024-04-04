@@ -1,0 +1,70 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #b5b1ff;
+}
+.container {
+  width: 1400px;
+  height: 100vh;
+  margin: 50px auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+}
+.random-colors {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 25px;
+}
+.random-colors .colors {
+  width: 250px;
+  height: 250px;
+  padding: 10px;
+  text-align: center;
+  background: #fff;
+  border-radius: 10px;
+}
+.random-colors .colors .color {
+  width: 100%;
+  height: 85%;
+  background: #f7890f;
+  border-radius: 5px;
+  cursor: pointer;
+  opacity: 0.9;
+}
+.random-colors .colors .color:hover {
+  opacity: 1;
+}
+.random-colors .colors p {
+  margin-top: 10px;
+  font-size: 18px;
+}
+.btn {
+  width: 100%;
+  text-align: center;
+}
+button {
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: 500;
+  outline: 0;
+  border: 3px solid #fff;
+  background: #5b30f7;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+}
+button:hover {
+  background: #4d20ed;
+}

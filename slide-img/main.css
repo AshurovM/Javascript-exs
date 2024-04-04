@@ -1,0 +1,76 @@
+@import url("https://cdn-uicons.flaticon.com/2.0.0/uicons-bold-rounded/css/uicons-bold-rounded.css");
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;800;900&display=swap);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  height: 100vh;
+}
+img {
+  width: 100%;
+}
+i.fi {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  max-width: 100%;
+  height: 100%;
+  padding: 50px;
+  background: #000;
+}
+.slider {
+  display: flex;
+  gap: 30px;
+  height: 100%;
+}
+.slider .slide {
+  width: 20%;
+  border-radius: 70px;
+  overflow: hidden;
+  position: relative;
+  transition: .8s;
+}
+.slider .slide.active {
+  width: 120%;
+  border-radius: 80px;
+}
+.slider .slide.active img {
+}
+.slider .slide.active .text {
+  display: block; 
+}
+.slider .slide img {
+  height: 100%;
+  object-fit: cover;
+}
+.slider .content {
+  position: absolute;
+  left: 30px;
+  bottom: 30px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.slider .content .icon {
+  min-width: 70px;
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  color: #da5a69;
+  font-size: 30px;
+  border-radius: 50%;
+}
+.slider .content .text {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 200;
+  display: none;
+}
